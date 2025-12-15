@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard — UI Widgets (ООП)</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-row">
+      <div>
+        <h1 class="title">Интерактивный дашборд</h1>
+        <p class="subtitle">ООП • ES6 Modules • API-виджеты</p>
+      </div>
+
+      <div class="toolbar" role="group" aria-label="Добавить виджет">
+        <button class="btn" data-add="todo">+ ToDo</button>
+        <button class="btn" data-add="quote">+ Quote</button>
+        <button class="btn" data-add="weather">+ Weather (API)</button>
+        <button class="btn" data-add="crypto">+ Crypto (API)</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="dashboardGrid" aria-label="Панель виджетов"></section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container footer-row">
+      <span>GitHub Pages: проект должен быть опубликован</span>
+      <span class="muted">Виджеты API: Weather(Open-Meteo), Crypto(CoinGecko)</span>
+    </div>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
